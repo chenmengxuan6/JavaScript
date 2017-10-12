@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计算器</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		td{
+			text-align: center;
+			padding: 0px;
+
+		}
+		input{
+			margin: 10px;
+			height: 50px;
+			width: 50px;
+			text-align: center;
+		}
+		.sq{
+			height: 30px;
+			width: 30px;
+		}
+		#input{
+			text-align: right;
+			margin:0px;
+			height: 65px;
+			width: 230px;
+			font-size: 30px;
+			}
+	</style>
+	<script type="text/javascript">
+		function showData(nums){
+			document.getElementById('input').value += document.getElementById(nums).value;
+			 
+		}
+		function calculate(){
+			document.getElementById("input").value = eval(document.getElementById("input").value);
+		}
+		function clearDate(){
+		    document.getElementById('input').value = 0;
+		    
+		}
+	</script>
+</head>
+<body>
+<table border=1 align="center">
+	<tr>
+		<td colspan="3"><input type="text" name="text" id="input"></td>
+		<td><input type="button" name="clear" value="C"  onclick="clearDate()"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="1" name="sq" id="1" onclick="showData(this.id)"></td>
+		<td><input type="button" value="2" name="sq" id="2" onclick="showData(this.id)"></td>
+		<td><input type="button" value="3" id="3" onclick="showData(this.id)"></td>
+		<td><input type="button" value="+" id="+" onclick="showData(this.id)"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="4" id="4" onclick="showData(this.id)"></td>
+		<td><input type="button" value="5" id="5" onclick="showData(this.id)"></td>
+		<td><input type="button" value="6" id="6" onclick="showData(this.id)"></td>
+		<td><input type="button" value="-" id="-" onclick="showData(this.id)"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="7" id="7" onclick="showData(this.id)"></td>
+		<td><input type="button" value="8" id="8" onclick="showData(this.id)"></td>
+		<td><input type="button" value="9" id="9" onclick="showData(this.id)"></td>
+		<td><input type="button" value="*" id="*" onclick="showData(this.id)"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="0" id="0" onclick="showData(this.id)"></td>
+		<td><input type="button" value="." id="." onclick="showData(this.id)"></td>
+		<td><input type="button" value="=" id="=" onclick="calculate()"></td>
+		<td><input type="button" value="/" id="/" onclick="showData(this.id)"></td>
+	</tr>
+</table>
+</body>
+</html>
