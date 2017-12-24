@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户注册</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		span{
+			color: red;
+		}
+	</style>
+</head>
+<script src="jquery-3.2.1.slim.min.js"></script>
+<body>
+	<table >
+		<tr>
+			<td >用户名：</td>
+			<td ><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>密码：</td>
+			<td><input type="password" name="psw"></td>
+		</tr>
+		<tr>
+			<td>确认密码：</td>
+			<td><input type="password" name="rpsw"></td>
+		</tr> 
+		<tr >
+			<td colspan="2" align="center"><input type="button" value="注册"></td>
+		</tr>
+  	</table>
+</body>
+<script type="text/javascript">
+	var $name=$("input[name='name']");
+	var $psw=$("input[name='psw']");
+	var $rpsw=$("input[name='rpsw']");
+	var $error1=$('<span>用户名不能为空</span>');
+	var $error2=$('<span>密码不能为空</span>');
+	var $error3=$('<span>两次密码输入不一致</span>');
+	$name.blur(function(){
+		if($name.val()=='')
+		{
+			$name.after($error1);
+		}
+		else
+		{
+			$name.siblings()[0].remove();
+		}
+	});
+	$psw.blur(function(){
+		if($psw.val()=='')
+		{
+			$psw.after($error2);
+		}
+		else
+		{
+			$psw.siblings()[0].remove();
+		}
+	});
+	$rpsw.blur(function(){
+		if($rpsw.val()!=$psw.val())
+		{
+			$rpsw.after($error3);
+		}
+		else
+		{
+			$rpsw.siblings()[0].remove();
+		}
+	});
+</script>
+</html>
