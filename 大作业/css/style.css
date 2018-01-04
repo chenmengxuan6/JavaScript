@@ -1,0 +1,336 @@
+ *{
+    margin:0px; padding:0px; font:12px normal; font-family:微软雅黑;
+ } 
+ a{
+	text-decoration: none;
+ }      
+ #wrap{
+     width:100%;  
+ }
+ #heder{
+ 	width: 100%;
+ 	height: 350px;
+
+ }
+ #header #banner{
+ 	width: 100%;
+ 	height: 200px;
+ 	background-image: url(../images/banner.jpg);
+
+ }
+ #header #nap{
+ 	
+ 	overflow: hidden;
+ 	z-index: 1;
+ 	width: 100%;
+
+
+ }
+
+ #header #search{
+ 	position: absolute;
+ 	margin-left:1000px;
+ 	margin-top: -30px;
+ 	
+ 	
+ }
+ #header #land{
+ 	height: 20px;
+ 	width: 50px;
+ 	position: absolute;
+ 	margin-left:1200px;
+ 	margin-top: -30px;
+ 	background-color:#E6E6E6;
+ 	text-align: center;
+ 	line-height: 20px;
+ 	cursor:pointer; 
+ }
+ #header #land a{
+ 	color:#000;
+
+ }
+ #land b{
+ 	width: 50px;
+ 	display: block;
+ }
+ #header #onclick{
+ 	width: 250px;
+ 	height: 250px;
+ 	position: absolute;
+ 	background-color: #ccc;
+ 	margin-top: 20px;
+ 	display: none;
+ 	right: 1px;
+ 		border: 1px solid #C4F6F6;
+			background-color: #222222;
+			width:230px;
+
+ }
+
+		#main{
+			text-align: right;
+		}
+ 
+		#main1
+		{
+			margin-left: 17px;
+			margin-top: 12px;
+			width: 190px;
+		}
+		#main1 input{
+			border:1px solid #ccc;
+			height: 30px;
+			text-align: center;
+			width: 190px;
+		}
+		#main3{
+			margin-left: 17px;
+			margin-top: 12px;
+			font-size: 8px;
+			width: 190px;
+			color:#fff;
+		}
+		#special{
+			color:#fff;
+		}
+
+		#main2{
+			margin-left: 17px;
+			margin-top: 12px;
+			width: 190px;
+		}
+		#main2 input{
+			border:1px solid #ccc;
+			height: 30px;
+			text-align: center;
+			width: 190px;
+		}
+		#main4 input
+		{
+			background: url(../images/sprite.jpg);
+			background-position: 0 0px;
+			width: 190px;
+			height: 37px;
+
+		}
+		#main5 input
+		{
+			background: url(../images/sprite.jpg);
+			background-position: 0 -37px;
+			width: 190px;
+			height: 37px;
+		}
+		#main4
+		{
+			margin-left: 17px;
+			margin-top: 12px;
+		}
+		#main5
+		{
+			margin-left: 17px;
+			margin-top: 12px;
+		}
+
+ #wrap ul{
+     list-style:none; 
+     display:block;
+     height: 50px;
+     line-height:50px; 
+     width:100%;
+     line-height: 30px;
+     background-color:#222222;
+
+ }
+ #wrap ul li{
+     float:left; 
+     width:135px; 
+     
+     font-size: 16px;
+     color:white;
+     line-height:50px; 
+     text-align:center;
+     display:inline-block;
+     cursor:pointer; 
+     list-style:none;
+   
+ }
+ #wrap ul li:hover{
+ 	color:#BBBBBB;
+ }
+ #wrap ul a{
+ 	 color:white;
+ 	 font-size: 16px;
+ }
+ #wrap ul a:hover{
+ 	color:#BBBBBB;
+ }
+#wrap .hd{
+	background-color: white; 
+	display: none;
+}
+ #wrap .hd li{
+   line-height:50px; 
+   width: 135px;
+  background-color: #222222;
+   color: white;
+  
+  
+ }
+
+
+
+
+
+
+ /*mainbody区域*/
+
+ #wrap #mainbody div{
+      
+     line-height:25px;
+     width: 100%; 
+     margin-top: 
+     
+ }
+ #mainbody #picScroll{
+ 	height: 300px;
+ 	width: 100%;
+ 	overflow:hidden;
+	white-space: nowrap;
+ }
+ 
+ .hide{
+ 	display:none;
+	
+
+ }
+ #mainbody .router-head1{
+	position: absolute;
+	margin-top: -200px;
+	margin-left: 100px;
+	font-size: 25px;
+ }
+ #mainbody .router-head2{
+	position: absolute;
+	margin-top: -140px;
+	margin-left: 100px;
+	font-size: 16px;
+
+ }
+ #mainbody .router-head3 a{
+	position: absolute;
+	margin-top: -90px;
+	margin-left: 100px;
+	font-size: 16px;
+	color:#000;
+ }
+ #mainbody .router-head3 a:hover{
+ 	text-decoration: underline;
+ }
+ #mainbody .router-head4{
+ 	position: absolute;
+	margin-top: -140px;
+	margin-left: 700px;
+	font-size: 25px;
+ }
+ #mainbody .router-head5{
+ 	position: absolute;
+	margin-top: -100px;
+	margin-left: 700px;
+	font-size: 16px;
+ }
+ #mainbody #hide1 a{
+ 	position: absolute;
+ 	margin-top:-710px;
+ 	color:white;
+ 	margin-left:30px;
+ 	font-size: 35px;
+ }
+ #mainbody #hide1 a:hover{
+	color:#ccc;
+}
+#mainbody #hide2 a{
+	position: absolute;
+ 	margin-top:-650px;
+ 	color:white;
+ 	margin-left:30px;
+ 	font-size: 35px;
+ 	
+} 
+
+#mainbody #hide2 a:hover{
+	color:#ccc;
+}
+#mainbody #gear{
+	position: relative;
+	top:-24px;
+}
+#mainbody .HUA1{
+	width: 170px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	margin-left: 200px;
+	margin-top: -100px;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+#mainbody .HUA1:hover{
+	background-color: #ccc;
+}
+#mainbody .HUA2{
+	width: 170px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	margin-left: 500px;
+	margin-top: -100px;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+#mainbody .HUA2:hover{
+	background-color: #ccc;
+}
+
+
+
+/*footer区域*/
+#footer{
+	width: 100%;
+	height: 300px;
+	background-color:#5F5F5F;
+}
+#footer #footer1 li a{
+	float: left;
+	color: #000;
+	font-size: 20px;
+}
+#footer #footer1 li a:hover{
+	color:#FFFFFF;
+}
+#footer2 ul{
+	width: 70%;
+}
+#footer2 li{
+	text-align: center;
+}
+#footer2{
+	float: left;
+}
+#footer3 img{
+	float: right;
+}
+
+
+#back{
+	position: fixed;
+	right: 0;
+	top:40%;
+	background-color: #ccc;
+	width: 30px;
+}
+#back a{
+	color: white;
+	font-size: 24px;
+}

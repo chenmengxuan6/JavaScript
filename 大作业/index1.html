@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+   	<link rel="stylesheet" href="css/style.css">
+	<script src="js/drag.js"></script>
+	<script src="js1/jquery-2.2.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+				$(".on ").hover(function(){
+					   $(this).children("ul").stop(true,true).slideDown(400);
+					  },function(){
+					   $(this).children("ul").stop(true,true).slideUp("fast");
+				});
+				$("#land b").click(function(){
+					$("#onclick").fadeIn("normal");
+				});
+				$("#land #main input").click(function(){
+					$("#onclick").fadeOut("normal");
+				})
+
+		});
+	</script>
+ 
+</head>
+<body>
+<!-- HTML页面布局 -->
+<div id="wrap">
+    <div id="header">
+    	<div id="banner"></div>
+    	<div id="nap">
+		    <ul>
+		        <li  ><a href="index.html">首页</a></li>
+		        <li class="on" id="on1">apple
+		        <ul class="hd">
+		        	<li>apple1</li>
+		        	<li>apple2</li>
+		        </ul>
+		        </li>
+		        <li class="on">samsung
+		        <ul class="hd">
+		        	<li>gear</li>
+		        	<li>gear1</li>
+		        	<li>gear2</li>
+		        	<li>gear3</li>
+		        </ul>
+		        </li>
+		        <li class="on">HUAWEI
+		        <ul class="hd">
+		        	<li>hw1</li>
+		        	<li>hw2</li>
+		        	<li>hw3</li>
+		        </ul>
+		        </li>
+		        <li class="on">moto
+					<ul class="hd">
+						<li>moto1</li>
+						<li>moto2</li>
+						<li>moto3</li>
+					</ul>
+		        </li>
+		        <li><a href="list.html">list</a></li>
+		        <li><a href="content.html">content</a></li>
+		    </ul>
+		    <div id="search">
+				<section class="webdesigntuts-workshop">
+						<form action="" method="">		    
+							<input type="search" placeholder="">		    	
+							<button>Search</button>
+						</form>
+					<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+					</section>
+		    </div>
+		    <div id="land">
+		    	<b>登陆</b>
+		   <div id="onclick">
+		   			<div id="main">
+		   				<input type="button" value="x" id=btn  width="10px" height="10px">
+		   			</div>
+				    <div id="main1">
+						<form action=""><input type="text" placeholder="邮箱/手机号/用户名"></form>     
+						
+					</div>
+					<div id="main2">
+						<form action=""><input type="password" placeholder="请输入密码"></form>
+					</div>
+					<div id="main3">
+						<form action=""><input type="radio" >下次自动登陆&nbsp;&nbsp;&nbsp;<a href="" style="color:#fff;">忘记密码？</a></form>
+
+					</div>
+					<div id="main4"><input type="button" value=""></div>
+					<hr>
+					<div id="main5"><input type="button" value=""></div>
+					<br>
+				    </div>
+		    </div> 
+        </div>
+     </div>   
+    <div id="mainbody">
+	    <div>
+	    <img src="images/main.jpg" alt="">
+	    <img src="images/main1.jpg" alt="">
+	    <img src="images/main2.jpg" alt="">
+	    </div>
+	    <div id="picScroll">
+		<span id="picScroll1">
+			<img src="images/gd1.jpg" />
+			<img src="images/gd2.jpg" />
+			<img src="images/gd3.jpg" />
+			<img src="images/gd4.jpg" />
+			<img src="images/gd5.jpg" />
+			<img src="images/gd6.jpg" />
+			<img src="images/gd7.jpg" />
+			<img src="images/gd8.jpg" />
+		</span>
+		<span id="picScroll2">
+			<img src="images/gd1.jpg" />
+			<img src="images/gd2.jpg" />
+			<img src="images/gd3.jpg" />
+			<img src="images/gd4.jpg" />
+			<img src="images/gd5.jpg" />
+			<img src="images/gd6.jpg" />
+			<img src="images/gd7.jpg" />
+			<img src="images/gd8.jpg" />
+		</span>
+ 	</div> 
+
+	    <div class="hide">
+	    	<img src="images/bands_large.jpg" alt="">
+	    	<img src="images/hermes_large.jpg" alt="">
+	    	
+	    	<h3 class="router-head1">表带</h3>
+	    	<p class="router-head2">换个表带，变个造型。</p>
+	    	<p class="router-head3"><a href="">选购表带> </a></p>
+	    	
+			<p class="router-head4">Apple Watch Hermès</p>
+			<p class="router-head5">于 Apple Store 在线商店和指定零售店有售。新配色的表带现可单独购买。</p>
+				
+			
+	    </div>
+	    <div class="hide">	     
+				
+				<img src="images/GearS2-typeKV.jpg" alt="">	
+				<h1 id="hide1"><a href="">Gear S2/Gear S2 classic</a></h1>
+				<p id="hide2"><a href="">了解更多></a></p>
+				<img src="images/gear.jpg" alt="" id="gear">
+				    
+	    </div>
+	    <div class="hide">
+	     	<img src="images/huawei.jpg" alt="">
+	     	<p class="HUA1">了解更多</p>
+	     	<p class="HUA2">马上购买</p>
+	    </div>
+	    <div class="hide">
+	    	<img src="images/moto360.jpg" alt="">
+	     	<img src="images/moto.jpg" alt="">
+	    </div>
+	    <div class="hide">
+	    	<img src="images/moto360.jpg" alt="">
+	     	<img src="images/moto.jpg" alt="">
+	    </div>
+	    <div class="hide">
+	     	<img src="images/moto360.jpg" alt="">
+	     	<img src="images/moto.jpg" alt="">
+	    </div>
+    </div>
+	<div id="footer">
+		 <div id="footer1"> 
+			 <ul>
+			 	<li><a href="index.html">首页</a></li>
+			 	<li><a href="">网上商城</a></li>
+			 </ul>
+
+		</div>
+		<div id="footer2">
+			<ul>
+				<li><a href="">按访问者</a></li>
+				<li><a href="">个人用户</a></li>
+				<li><a href="">企业用户</a></li>
+				<li><a href="">运营商用户</a></li>
+				<li><a href="">求职者</a></li>
+				<li><a href="">供应商</a></li>
+				
+			</ul>
+			<ul>
+				<li><a href="">关于smart</a></li>
+				<li><a href="">公司简介</a></li>
+				<li><a href="">公司治理</a></li>
+				<li><a href="">高管信息</a></li>
+				<li><a href="">网络安全</a></li>
+				<li><a href="">出版物</a></li>
+				<li><a href="">可持续发展</a></li>
+							</ul>
+			<ul>
+				<li><a href="">新闻和展会</a></li>
+				<li><a href="">新闻</a></li>
+				<li><a href="">媒体工具</a></li>
+				<li><a href="">安全通告</a></li>
+				<li><a href="">展会活动</a></li>
+
+
+			</ul>
+		
+		</div>
+		<div id="footer3"><img src="images/footer1.jpg" alt=""></div>
+		<img src="images/footer.jpg" alt="">	 
+	</div>
+</div>
+<div id="back">
+	<a href="index1.html">返<br>回<br>顶<br>部</a>
+</div>
+
+ 
+</body>
+</html>
